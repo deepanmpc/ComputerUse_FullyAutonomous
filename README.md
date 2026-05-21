@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center"> COWORK — Autonomous macOS Desktop Agent</h1>
+  <h1 align="center"> EDITH COWORK — Autonomous macOS Desktop Agent</h1>
   <p align="center">
     Give it a goal. It sees your screen, reasons, and acts — like a human co-worker who never sleeps.
   </p>
