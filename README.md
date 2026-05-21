@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">🤖 COWORK — Autonomous macOS Desktop Agent</h1>
+  <h1 align="center"> COWORK — Autonomous macOS Desktop Agent</h1>
   <p align="center">
     Give it a goal. It sees your screen, reasons, and acts — like a human co-worker who never sleeps.
   </p>
@@ -14,9 +14,9 @@
 
 ---
 
-## What is COWORK?
+## What is EDITH COWORK?
 
-COWORK is a fully autonomous desktop agent for macOS.
+EDITH COWORK is a fully autonomous desktop agent for macOS.
 
 You type (or speak) a goal like:
 
@@ -120,7 +120,7 @@ pip install -r requirements.txt
 
 ### Step 4 — Get Your NVIDIA API Key
 
-COWORK uses [NVIDIA Build](https://build.nvidia.com) to access powerful LLMs (Llama, Nemotron, GPT-OSS models) via a single API endpoint.
+EDITH COWORK uses [NVIDIA Build](https://build.nvidia.com) to access powerful LLMs (Llama, Nemotron, GPT-OSS models) via a single API endpoint.
 
 1. Go to **[build.nvidia.com](https://build.nvidia.com)**
 2. Sign up or log in (free account)
@@ -128,7 +128,7 @@ COWORK uses [NVIDIA Build](https://build.nvidia.com) to access powerful LLMs (Ll
 4. You'll use this key in the next step
 
 > [!TIP]
-> NVIDIA Build gives you free credits to start. The models used by COWORK (Llama 4 Maverick, GPT-OSS 120B, Nemotron) are all available on their free tier.
+> NVIDIA Build gives you free credits to start. The models used by EDITH COWORK (Llama 4 Maverick, GPT-OSS 120B, Nemotron) are all available on their free tier.
 
 ### Step 5 — Configure Environment Variables
 
@@ -191,7 +191,7 @@ MAX_AGENT_ITERATIONS=10
 
 ---
 
-## Running COWORK
+## Running EDITH COWORK
 
 ### Option A — CLI Mode (Recommended)
 
@@ -331,7 +331,7 @@ COWORK uses **3 different models** from NVIDIA Build for different jobs:
 
 ## Contributing
 
-PRs welcome. If you're building on COWORK or extending it with a new model backend, open an issue first to discuss — happy to help integrate it cleanly.
+PRs welcome. If you're building on EDITH COWORK or extending it with a new model backend, open an issue first to discuss — happy to help integrate it cleanly.
 
 ---
 
