@@ -233,54 +233,7 @@ PYTHONPATH=.. python main.py
 
 ---
 
-## Project Structure
 
-```
-COWORK_AGENT_DESKTOP_AUTOMATION/
-│
-├── runtime_agent/          # Master orchestrator loop
-│   ├── config.py           # Global runtime configuration
-│   └── services/           # Vision client, TTS, microphone, LLM chat
-│
-├── vision_service/         # Screen capture + UI understanding
-│   ├── screenshot.py       # MSS screen capture
-│   ├── ocr.py              # PaddleOCR text extraction
-│   ├── parser.py           # Structured UI JSON builder
-│   ├── som_detector.py     # OmniParser YOLO element detection
-│   └── nvidia_vision.py    # NVIDIA cloud vision (optional)
-│
-├── planner_service/        # LLM-powered action planning
-│   ├── planner.py          # ReasoningEngine — core planning logic
-│   ├── prompt_builder.py   # Builds goal + UI state prompts
-│   ├── schemas.py          # Action type definitions
-│   └── task_memory.py      # Short-term task context
-│
-├── executor_service/       # OS-level action execution
-│   ├── executor.py         # Main executor dispatcher
-│   ├── action_router.py    # Routes actions to correct handler
-│   ├── element_cache.py    # Coordinate caching layer
-│   ├── ui_compressor.py    # Compresses UI to 40-element cap
-│   ├── interrupt_manager.py# ESC key interrupt handler
-│   └── actions/            # Click, type, scroll, key handlers
-│
-├── verifier_service/       # Post-action verification
-│   ├── verifier.py         # Main verifier logic
-│   ├── state_diff.py       # Before/after UI comparison
-│   ├── loop_detector.py    # Detects stuck retry loops
-│   └── completion_detector.py # Goal completion check
-│
-├── memory/                 # Session and episodic memory
-│   ├── session.py          # Redis-backed session state
-│   └── episodic.py         # Long-term task history
-│
-├── OmniParser/             # Microsoft OmniParser (UI grounding model)
-├── main.py                 # Entry point
-├── cli.py                  # EDITH CLI interface
-├── best.pt                 # YOLO weights for UI element detection
-├── requirements.txt        # All Python dependencies
-├── .env.example            # Environment variable template
-└── .gitignore
-```
 
 ---
 
